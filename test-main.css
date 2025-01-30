@@ -1,0 +1,109 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Background */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    justify-content: flex-start; /* Keeps header at the top */
+  }
+  
+  /* Main Header Styling */
+  .main-header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text color */
+    padding: 10px 0; /* Padding around the header */
+    position: sticky; /* Keeps header fixed at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  /* Navigation Menu */
+  nav {
+    text-align: center; /* Center the menu items */
+  }
+  
+  ul.menu {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Centers the menu items horizontally */
+    list-style-type: none; /* Removes bullet points */
+  }
+  
+  ul.menu li {
+    margin: 0 20px; /* Adds space between the menu items */
+  }
+  
+  ul.menu li a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text for links */
+    font-size: 18px; /* Font size for the links */
+    padding: 10px 15px; /* Adds padding inside the links */
+    display: inline-block; /* Ensures padding works as expected */
+  }
+  
+  ul.menu li a:hover {
+    background-color: rgb(73, 98, 143); /* Highlight color on hover */
+    border-radius: 5px; /* Optional: Rounded corners for the hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Main Content Section */
+  .main-content {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Centers the text inside */
+    margin-top: -75px; /* Adjust the margin to move it down from the top */
+    flex-grow: 1; /* Ensures it takes up the available space */
+  }
+  
+  /* Profile Image Container */
+  .profile-img-container {
+    display: inline-block;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Hides any part of the image that overflows */
+    width: 200px; /* Sets the width of the circular image */
+    height: 200px; /* Sets the height of the circular image */
+    margin-bottom: 20px; /* Adds space below the image */
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circular container */
+  }
+  
+  /* Welcome Message */
+  .welcome-message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  /* Introductory Message */
+  .intro-message p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text for the footer */
+    text-align: center; /* Centers the footer content */
+    padding: 10px; /* Padding for the footer */
+    position: fixed; /* Keeps the footer at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Full width */
+  }
+  

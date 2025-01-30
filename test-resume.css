@@ -1,0 +1,66 @@
+/* main-menu.css (for the menu and global styling) */
+
+/* Main Menu Styles */
+body {
+.background {
+    background-color: bisque;
+}
+.resume-content {
+    width: 8.5in;
+    margin: 1in auto 0 auto;
+    padding: 1in;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    border-radius: 8px;
+}
+
+.resume-content .name {
+    text-align: center;
+    font-size: 2em;
+    color: #3c83cf;
+    margin-bottom: 10px;
+}
+
+.resume-content .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    border-top: 2px solid #3c83cf;
+    padding-top: 10px;
+}
+
+.resume-content .contact span {
+    display: inline-block;
+}
+
+.resume-content .contact .centered {
+    position: relative;
+}
+
+.resume-content .section {
+    margin-top: 20px;
+}
+
+.resume-content .section-title {
+    font-weight: bold;
+    color: #3c83cf;
+    border-bottom: 2px solid #3c83cf;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.resume-content .subsection {
+    margin-left: 20px;
+}
+
+.resume-content .nested {
+    margin-left: 40px;
+}
+
+.resume-content a {
+    text-decoration: none;
+    color: #3c83cf;
+}}
